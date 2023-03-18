@@ -1,9 +1,9 @@
 <html> 
 <head>
-    <title>Greeting Message</title> 
+    <title>Mensaje de buenos días</title> 
     <style>
 #lbl {
-    font-family: monospace;
+    font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", SimSun, "Nanum Myeongjo", NanumMyeongjo, Batang, serif;
     font-size: large;
     color: #626262;
     padding: 5px;
@@ -23,13 +23,13 @@
 
 <script>
     var weekday = new Array(7);
-    weekday[0] = "Domingo";
-    weekday[1] = "Lunes";
-    weekday[2] = "Martes";
-    weekday[3] = "Miércoles";
-    weekday[4] = "Jueves";
-    weekday[5] = "Viernes";
-    weekday[6] = "Sábado";
+    weekday[0] = "domingo";
+    weekday[1] = "lunes";
+    weekday[2] = "martes";
+    weekday[3] = "miércoles";
+    weekday[4] = "jueves";
+    weekday[5] = "viernes";
+    weekday[6] = "sábado";
 
     
     var today = new Date();
@@ -40,11 +40,11 @@
     var greet;
 
     if (hrs < 12)
-        greet = '¡Buenos días!  ';
+        greet = '¡Buenos días, Fati!  ';
     else if (hrs >= 12 && hrs <= 17)
-        greet = '¡Buenas tardes! ';
+        greet = '¡Buenas tardes, Fati! ';
     else if (hrs >= 17 && hrs <= 24)
-        greet = '¡Buenas noches!  ';
+        greet = '¡Buenas noches, Fati!  ';
 
     document.getElementById('lbl').innerHTML =
         greet+=`<div id="date"> Hoy es ${date}</div>`;
